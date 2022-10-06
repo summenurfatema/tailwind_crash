@@ -1,0 +1,24 @@
+{
+  "name": "tailwind_crash",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000t\u0000a\u0000i\u0000l\u0000w\u0000i\u0000n\u0000d\u0000_\u0000c\u0000r\u0000a\u0000s\u0000h\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/style.css -o ./public/style.css",
+    "watch": "tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summenurfatema/tailwind_crash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/summenurfatema/tailwind_crash/issues"
+  },
+  "homepage": "https://github.com/summenurfatema/tailwind_crash#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
