@@ -12,26 +12,49 @@
 
 <body>
     <!-- Navbar is here -->
-    <nav class="container mx-auto p-6 relative">
+    <nav class="mx-auto p-6 relative">
 
         <!-- flex box -->
-        <div class="flex items-center justify-between">
+        <div class="flex  items-center justify-between">
             <!-- logo -->
             <div>
-                <img style="height:130px;width:130px" src="images/logo.png" alt="logo">
+                <img class="h-20 w-20 md:h-32 md:w-32 " src="images/logo.png" alt="logo">
             </div>
+
             <!-- menu -->
-            <div class="hidden md:flex space-x-6 font-semibold">
-                <a href="#" class="hover:text-darkGrayisBlue">Pricing</a>
+            <div class="hidden md:flex md:flex-row md:space-x-6 font-semibold">
+                <a href="#" class="hover:text-darkGrayisBlue pt-0">Pricing</a>
                 <a href="#" class="hover:text-darkGrayisBlue">Products</a>
                 <a href="#" class="hover:text-darkGrayisBlue">Careers</a>
                 <a href="#" class="hover:text-darkGrayisBlue">About Us</a>
                 <a href="#" class="hover:text-darkGrayisBlue">Community</a>
+
             </div>
             <!-- button -->
             <a href="#"
                 class="hidden px-5 baseline font-semibold py-3 bg-brightRed rounded-full hover:bg-brightRedLight text-white md:block">Getting
                 start</a>
+
+            <!-- hamburger -->
+            <div id="burger">
+                <svg class="w-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" id="burger" />
+                </svg>
+            </div>
+
+            <!-- mobile menu -->
+            <div id="menu"
+                class=" md:hidden absolute mt-72 left-6 right-6 font-bold space-y-2 self-end flex flex-col items-center sm:max-w-auto sm:self-center bg-white pb-5">
+
+                <a href="#" class="hover:text-brightRed">Pricing</a>
+                <a href="#" class="hover:text-brightRed">Products</a>
+                <a href="#" class="hover:text-brightRed">Careers</a>
+                <a href="#" class="hover:text-brightRed">About Us</a>
+                <a href="#" class="hover:text-brightRed">Community</a>
+            </div>
+
         </div>
         <!-- flex end -->
     </nav>
@@ -287,6 +310,16 @@
         </div>
 
     </section>
+    <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu')
+        burger.addEventListener('click', function () {
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden')
+            }
+            else { menu.classList.add('hidden') }
+        })
+    </script>
 </body>
 
 </html>
