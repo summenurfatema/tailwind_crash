@@ -216,7 +216,7 @@
     <section id="cta" class="bg-brightRed">
         <!-- flex container -->
         <div
-            class="flex flex-col justify-evenly items-center space-y-12 px-2 py-24 md:flex-row md:py-12 md:space-x-6 md:space-y-0">
+            class="flex flex-col container mx-auto justify-evenly items-center space-y-12 px-2 py-24 md:flex-row md:py-12 md:space-x-6 md:space-y-0">
 
             <h2 class="font-bold text-5xl text-white text-center md:max-w-xl md:text-left">
                 Simplify how your team works today
@@ -235,7 +235,8 @@
     <section id="footer" class="bg-veryDarkBlue">
         <!-- flex container of footer-->
         <div
-            class="flex flex-col-reverse container mx-auto px-7 py-10 space-y-10 md:flex-row md:space-y-0 md:space-x-10">
+            class="flex flex-col-reverse justify-between container mx-auto px-6 py-10 space-y-10 space-x-8 md:flex-row md:space-y-0 ">
+
             <!-- logo icon container -->
             <div class="flex flex-col-reverse items-center justify-between space-y-10 md:flex-col md:space-y-10 ">
 
@@ -253,8 +254,10 @@
                 </div>
             </div>
             <!-- logo icon end -->
+
+
             <!-- list container -->
-            <div class="flex justify-around space-x-32 text-white text-xl">
+            <div class="flex justify-between space-x-32 text-white text-xl">
                 <!-- list1 -->
                 <div class="flex flex-col space-y-3">
                     <a href="#" class="hover:text-brightRed">Home</a>
@@ -269,12 +272,16 @@
                     <a href="#" class="hover:text-brightRed">Privacy Policy</a>
                 </div>
             </div>
+
             <!-- input container -->
-            <div class="flex flex-col justify-between">
+            <div class="flex justify-between">
                 <!-- input -->
-                <input type="text" class="flex px-20 py-5 rounded-full focus:outline-none"
-                    placeholder="Updated in your inbox">
+                <form>
+                    <input type="text" class="py-5 px-20 rounded-full" placeholder="Updated in yout inbox" name=""
+                        id="">
+                    <button class=" bg-brightRed text-white focus:outline-none rounded-full">Go</button>
             </div>
+            </form>
 
         </div>
 
