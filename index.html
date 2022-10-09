@@ -12,23 +12,22 @@
 
 <body>
     <!-- Navbar is here -->
-    <nav class="relative md:ml-20">
+    <nav class=" container mx-auto relative lg:ml-20">
 
         <!-- flex box -->
-        <div class="flex  items-center justify-between">
+        <div class="flex  items-center justify-evenly md:justify-between">
             <!-- logo -->
             <div>
-                <img class="h-32 w-32 md:h-52 md:w-52 " src="images/logo.png" alt="logo">
+                <img class="h-32 w-32 md:h-52 md:w-44 " src="images/logo.png" alt="logo">
             </div>
 
             <!-- menu -->
-            <div class="hidden md:flex md:flex-row md:space-x-10 text-xl font-semibold">
+            <div class="hidden md:flex md:flex-row md:space-x-5 font-semibold">
                 <a href="#" class="hover:text-darkGrayisBlue pt-0">Pricing</a>
                 <a href="#" class="hover:text-darkGrayisBlue">Products</a>
                 <a href="#" class="hover:text-darkGrayisBlue">Careers</a>
                 <a href="#" class="hover:text-darkGrayisBlue">About Us</a>
                 <a href="#" class="hover:text-darkGrayisBlue">Community</a>
-
             </div>
             <!-- button -->
             <a href="#"
@@ -37,7 +36,7 @@
 
             <!-- hamburger -->
             <div id="burger">
-                <svg class="w-6 mr-5 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <svg class="w-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" id="burger" />
@@ -259,7 +258,7 @@
         </div>
     </section>
     <!-- footer -->
-    <section id="footer" class="bg-veryDarkBlue">
+    <section id="footer" class="bg-veryDarkBlue px-3">
         <!-- flex container of footer-->
         <div
             class="flex flex-col-reverse justify-between items-center container mx-auto sm:px-6 py-10 space-y-10 space-x-8 md:flex-row md:space-y-0 md:space-x-3">
@@ -304,7 +303,8 @@
             <div class="flex space-x-5">
                 <!-- input -->
                 <form>
-                    <input type="text" class="px-1 py-2 sm:py-3 sm:px-2 rounded-full focus:outline-none md:px-5"
+                    <input type="text"
+                        class="px-1 py-2 sm:py-3 sm:px-2  rounded-full focus:outline-none md:px-3 lg:px-5"
                         placeholder="Updated in yout inbox" name="" id="">
                     <button
                         class="px-2 py-2 sm:px-6 sm:py-3 text-xl bg-brightRed text-white focus:outline-none rounded-full hover:bg-brightRedLight">Go</button>
