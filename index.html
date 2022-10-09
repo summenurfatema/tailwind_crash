@@ -12,13 +12,13 @@
 
 <body>
     <!-- Navbar is here -->
-    <nav class=" container mx-auto relative lg:pl-20">
+    <nav class=" container mx-auto relative">
 
         <!-- flex box -->
         <div class="flex  items-center justify-between">
             <!-- logo -->
             <div>
-                <img class="h-32 w-32 md:h-52 md:w-44 " src="images/logo.png" alt="logo">
+                <img class="h-32 w-32 md:h-52 md:w-52 " src="images/logo.png" alt="logo">
             </div>
 
             <!-- menu -->
@@ -32,14 +32,10 @@
 
             </div>
             <!-- hamburger -->
-            <div id="burger">
-                <svg class="w-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" id="burger" />
+            <button id="burger" class="md:hidden">
+                <i class="fa-solid fa-bars fa-2x"></i>
 
-                </svg>
-            </div>
+            </button>
 
 
             <!-- button -->
@@ -49,15 +45,12 @@
                 start</a>
 
 
-
-
-
         </div>
 
 
         <!-- mobile menu -->
         <div id="menu"
-            class=" md:hidden absolute mt-40 left-6 right-6 font-bold space-y-2 self-end flex flex-col items-center sm:max-w-auto sm:self-center bg-white pb-5">
+            class="flex flex-col items-center absolute mt-40 left-6 right-6 font-bold space-y-2 self-end sm:max-w-auto sm:self-center bg-white pb-5 hidden">
 
             <a href="#" class="hover:text-brightRed">Pricing</a>
             <a href="#" class="hover:text-brightRed">Products</a>
@@ -319,16 +312,7 @@
         </div>
 
     </section>
-    <script>
-        const burger = document.getElementById('burger');
-        const menu = document.getElementById('menu')
-        burger.addEventListener('click', function () {
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden')
-            }
-            else { menu.classList.add('hidden') }
-        })
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
